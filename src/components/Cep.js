@@ -6,12 +6,6 @@ export default function Cep() {
     const [api, setApi] = useState([])
     const [cep, setCep] = useState('')
 
-    // useEffect(() => {
-    //     let url = `https://cep.awesomeapi.com.br/:format/${cep}`
-    //      axios.get(url)
-    //         .then(res => {setApi(res.data)})
-    // })
-
     const cepApi = async () => {
         let url = `https://cep.awesomeapi.com.br/:format/${cep}`
         try {
